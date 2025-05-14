@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get<any>('http://localhost:5000/api/data').subscribe(data => {
+    this.http.get<any>('https://5000-andrea19327-prepdockerm-khy11yam8gv.ws-eu118.gitpod.io/api/data').subscribe(data => {
       this.messaggio = data.messaggio;
     });
   }
